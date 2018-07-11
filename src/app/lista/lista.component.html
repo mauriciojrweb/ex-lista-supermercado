@@ -1,0 +1,10 @@
+<input [(ngModel)]="lista.titulo" type="text" placeholder="Título da lista" />
+<br/> <br/>
+<input type="text" [(ngModel)]="produto"  placeholder="200g de Contra-filé" >
+<button (click)="addProdutoNaLista(produto)" >Add</button>
+
+<ul>
+  <li *ngFor="let produto of lista.produtos" >
+    {{produto}}
+  </li>
+</ul>
